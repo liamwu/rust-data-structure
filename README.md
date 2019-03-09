@@ -1,2 +1,2 @@
 # rust-data-structure
-rust data structure programming
+Data structure program in Rust
