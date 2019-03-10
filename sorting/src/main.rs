@@ -31,7 +31,7 @@ fn main() {
     }*/
 
     // Selection sorting
-    for i in 0..len {
+    /*for i in 0..len {
         println!("====== Round {} ======", i);
         println!("{:?}", arr);
         let mut min = i;
@@ -48,6 +48,31 @@ fn main() {
             let temp = arr[i];
             arr[i] = arr[min];
             arr[min] = temp;
+        }
+    }*/
+
+    //Insertion sorting
+    for i in 0..len {
+        let mut index = i;
+        println!("====== Round {} ======", i);
+        for i in 0..len {
+            if i == index {
+                print!("{}, $$$  ", arr[i]);
+            } else {
+                print!("{}, ", arr[i]);
+            }
+        }
+        print!("\n");
+
+        for j in 0..i {
+            if arr[i] < arr[j] {
+                println!("swap i:{} j:{}", i, j);
+
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            println!("{:?}", arr);
         }
     }
 
